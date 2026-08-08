@@ -10,7 +10,7 @@ print(status)
 mykey=os.getenv('GOOGLE_GEMINI_API_KEY')
 # print('the key is',mykey)
 genai.configure(api_key=mykey)
-model=genai.GenerativeModel("gemini-2.0-flash")
+model=genai.GenerativeModel("gemini-3.6-flash")
 
 
 def analyze_human_image(image):
@@ -54,3 +54,8 @@ if upload_image:
         st.image(i,caption="uploaded image",use_container_width=True)
     with col2:
         st.write(person_info)
+
+
+
+
+    
